@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+
+<a href="{{ url_for('main.cart') }}" style="float: right; margin-bottom: 15px; text-decoration: none; background: #007bff; color: white; padding: 8px 16px; border-radius: 5px;">
+    🛒 View Cart
+</a>
+<br>
+<br>
+<h2>{{ product.name }}</h2>
+
+<div class="product" style="display: flex; gap: 30px; align-items: flex-start; margin-top: 20px;">
+    
+    <img src="{{ url_for('static', filename=product.image.replace('static/', '')) }}" width="250" alt="{{ product.name }}" style="border: 1px solid #ccc; padding: 10px;">
+
+    <div>
+        <p><strong>Price:</strong> ₹{{ product.price }}</p>
+        <p><strong>Description:</strong> {{ product.description }}</p>
+        
+        <form method="POST" action="{{ url_for('main.add_to_cart', product_id=product.id) }}">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" value="1" min="1" required style="width: 60px; margin-left: 5px;">
+            <br><br>
+            <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+                Add to Cart
+            </button>
+        </form>
+        
+    </div>
+</div>
+
+{% endblock %}

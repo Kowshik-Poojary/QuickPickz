@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<a href="{{ url_for('main.cart') }}" class="btn btn-primary float-end mb-3">
+    🛒 View Cart
+</a>
+
+
+
+<div class="container mt-4">
+    <br>
+    <h2 class="mb-4">Products</h2>
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                    <img src="{{ url_for('static', filename='img/' + product.image.split('/')[-1]) }}"
+                         class="card-img-top"
+                         style="height: 100%; width: auto; max-width: 100%; object-fit: contain;"
+                         alt="{{ product.name }}">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">₹{{ product.price }}</p>
+                    <form action="{{ url_for('main.add_to_cart', product_id=product.id) }}" method="POST">
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        <a href="{{ url_for('main.product', id=product.id) }}" class="btn btn-secondary">View</a>
+                    </form>                    
+                    
+                </div>
+            </div>
+        </div>            
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

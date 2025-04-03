@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}My Orders{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h3 class="fw-bold text-gradient">My Orders</h3>
+    {% if orders %}
+        <div class="list-group mt-4">
+            {% for order in orders %}
+                <div class="list-group-item mb-3 shadow-sm border rounded text-dark">
+                    <h5>Order #{{ order.id }}</h5>
+                    <p><strong>Date:</strong> {{ order.date }}</p>
+                    <p><strong>Total:</strong> ₹{{ '%.2f' % (order.amount) }}</p>
+                    <p><strong>Status:</strong> {{ order.status }}</p>
+                    
+                    </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-muted mt-4">You have not placed any orders yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

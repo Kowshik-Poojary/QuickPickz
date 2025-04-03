@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% set hide_header = True %}
+{% set hide_sidebar = True %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<section class="animated-background">
+    {% for _ in range(50) %}
+        <span></span>
+    {% endfor %}
+</section>
+<div class="d-flex justify-content-center align-items-center w-100 register-container">
+    <div class="glass-card">
+        <h2 class="text-center mb-4">Register</h2>
+        <form method="POST" action="{{ url_for('main.register') }}">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" name="username" class="form-control glass-input" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control glass-input" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <div class="input-group">
+                    <input type="password" name="password" class="form-control glass-input" id="password" required>
+                    <button class="btn toggle-password" type="button" onclick="togglePassword()">👁</button>
+                </div>
+            </div>
+            <button type="submit" class="btn glass-button w-100">Register</button>
+            <p class="text-center mt-3">
+                Already have an account? <a href="{{ url_for('main.login') }}">Login</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<style>
+body {
+    background: #0a001f;
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-background span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 8px rgba(138, 43, 226, 0.8);
+    animation: moveParticles 20s infinite linear;
+}
+
+@keyframes moveParticles {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(-500px, -500px); opacity: 0; }
+}
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+    animation: popUp 0.6s ease-out;
+}
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #eee;
+    box-shadow: 0 0 6px rgba(138, 43, 226, 0.5);
+    border-radius: 8px;
+}
+
+.glass-input:focus {
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.6);
+}
+
+.glass-button {
+    background: linear-gradient(45deg, #8a2be2, #663399);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.5);
+    transition: 0.3s;
+}
+
+.glass-button:hover {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
+    transform: scale(1.05);
+}
+
+.toggle-password {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #8a2be2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+</style>
+
+<script>
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+}
+</script>
+{% endblock %}

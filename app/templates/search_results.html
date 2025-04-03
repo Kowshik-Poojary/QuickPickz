@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Search History -->
+{% if session.get('search_history', []) %}
+    <h3>Recent Searches</h3>
+    <ul>
+        {% for item in session.get('search_history', []) %}
+            <li><a href="{{ url_for('main.search', query=item) }}">{{ item }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.clear_search_history') }}">Clear Search History</a>
+{% endif %}
+
+<!-- Product Grid -->
+<div class="container mt-5">
+    <h3>Search Results for "{{ query }}"</h3>
+
+    {% if results %}
+        <div class="row mt-4">
+            {% for product in results %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                        <img src="{{ url_for('static', filename=product.image.replace('static/', '')) }}"
+                             class="card-img-top"
+                             style="height: 100%; width: auto; max-width: 100%; object-fit: contain;"
+                             alt="{{ product.name }}">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">₹{{ product.price }}</p>
+                        <form action="{{ url_for('main.add_to_cart', product_id=product.id) }}" method="POST">
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                            <a href="{{ url_for('main.product', id=product.id) }}" class="btn btn-secondary">View</a>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>            
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No products found.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

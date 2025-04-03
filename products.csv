@@ -1,0 +1,110 @@
+id,name,price,image,description
+1,Blue Cotton Shirt,899,static/img/blue_cotton_shirt.jpg,Comfortable blue cotton shirt for daily wear.
+2,Red T-Shirt,499,static/img/red_tshirt.jpg,Soft and breathable red t-shirt.
+3,Slim Fit Jeans,1299,static/img/slim_fit_jeans.jpg,Stylish slim-fit jeans with stretch fabric.
+4,Denim Jacket,1799,static/img/denim_jacket.jpg,Classic denim jacket for cool weather.
+5,White Sneakers,1599,static/img/white_sneakers.jpg,Trendy white sneakers for casual outings.
+6,Graphic Hoodie,999,static/img/graphic_hoodie.jpg,Warm hoodie with graphic print.
+7,Black Formal Pants,1199,static/img/black_formal_pants.jpg,Perfect pants for office or formal events.
+8,Leather Belt,699,static/img/leather_belt.jpg,Genuine leather belt in dark brown.
+9,Cotton Kurta,1099,static/img/cotton_kurta.jpg,Elegant cotton kurta for ethnic occasions.
+10,Sports Shorts,499,static/img/sports_shorts.jpg,Lightweight shorts for running or gym.
+
+11,Organic Almonds,599,static/img/organic_almonds.jpg,Raw organic almonds packed with nutrients.
+12,Whole Wheat Pasta,149,static/img/whole_wheat_pasta.jpg,Healthy pasta made with whole grains.
+13,Instant Noodles,49,static/img/instant_noodles.jpg,Quick-cook spicy noodles.
+14,Mixed Fruit Jam,199,static/img/mixed_fruit_jam.jpg,Tasty jam made with assorted fruits.
+15,Dark Chocolate Bar,89,static/img/dark_chocolate_bar.jpg,Rich 70% dark chocolate.
+16,Basmati Rice 5kg,459,static/img/basmati_rice.jpg,Aromatic and long-grain rice.
+17,Olive Oil 1L,399,static/img/olive_oil.jpg,Extra virgin olive oil for cooking and salad.
+18,Mango Juice,79,static/img/mango_juice.jpg,Refreshing mango flavored juice.
+19,Green Tea Bags,149,static/img/green_tea.jpg,Detox green tea for a healthy routine.
+20,Butter Cookies,119,static/img/butter_cookies.jpg,Crunchy cookies made with real butter.
+
+21,Leather Wallet,799,static/img/leather_wallet.jpg,Premium quality men's wallet.
+22,Analog Watch,999,static/img/analog_watch.jpg,Classic analog wristwatch with leather strap.
+23,Stud Earrings,299,static/img/stud_earrings.jpg,Silver-plated elegant earrings.
+24,Backpack Bag,1099,static/img/backpack_bag.jpg,Spacious backpack for daily use or travel.
+25,Black Sunglasses,599,static/img/black_sunglasses.jpg,UV-protected cool black sunglasses.
+26,Smartphone Cover,199,static/img/smartphone_cover.jpg,Slim shockproof phone case.
+27,Hair Brush Set,149,static/img/hair_brush.jpg,Hairbrush set for styling and grooming.
+28,Makeup Pouch,349,static/img/makeup_pouch.jpg,Compact pouch for travel makeup essentials.
+29,Travel Pillow,399,static/img/travel_pillow.jpg,Neck support pillow for travel comfort.
+30,Keychain Set,129,static/img/keychain_set.jpg,Stylish metal and fabric keychains.
+
+31,Wireless Earbuds,1499,static/img/wireless_earbuds.jpg,High-quality sound with noise isolation.
+32,Bluetooth Speaker,1799,static/img/bluetooth_speaker.jpg,Portable speaker with deep bass.
+33,Smartphone 5G,14999,static/img/smartphone_5g.jpg,Latest 5G smartphone with AMOLED screen.
+34,Smart Watch,2999,static/img/smart_watch.jpg,Fitness tracking with notifications.
+35,Laptop Backpack,1399,static/img/laptop_backpack.jpg,Water-resistant bag with laptop sleeve.
+36,Gaming Mouse,699,static/img/gaming_mouse.jpg,Ergonomic mouse with RGB lighting.
+37,Mechanical Keyboard,1999,static/img/mechanical_keyboard.jpg,Perfect keyboard for gaming or typing.
+38,USB Flash Drive 64GB,399,static/img/usb_flash_drive.jpg,High-speed USB 3.0 storage.
+39,WiFi Router,2199,static/img/wifi_router.jpg,Dual-band router for high-speed internet.
+40,Smart TV 32",14999,static/img/smart_tv.jpg,HD Smart TV with built-in apps.
+
+41,Ceramic Vase,799,static/img/ceramic_vase.jpg,Hand-painted vase for living room decor.
+42,Wall Clock,499,static/img/wall_clock.jpg,Stylish wall clock with silent movement.
+43,Cushion Covers Set,699,static/img/cushion_covers.jpg,Colorful cushion cover set of 5.
+44,Bed Lamp,899,static/img/bed_lamp.jpg,LED lamp for reading and ambiance.
+45,Photo Frame Set,499,static/img/photo_frame.jpg,Set of 3 classic photo frames.
+46,Table Organizer,299,static/img/table_organizer.jpg,Wooden desk organizer for accessories.
+47,Wall Art Canvas,1199,static/img/wall_art.jpg,Modern abstract wall painting.
+48,Indoor Plant Pot,349,static/img/plant_pot.jpg,Miniature pot for indoor greens.
+49,Scented Candles,399,static/img/scented_candles.jpg,Soothing lavender-scented candle pack.
+50,Fruit Basket,599,static/img/fruit_basket.jpg,Handwoven fruit holder basket.
+
+51,Running Shoes,1999,static/img/running_shoes.jpg,Lightweight shoes for runners.
+52,Yoga Mat,899,static/img/yoga_mat.jpg,Non-slip yoga mat with carry strap.
+53,Skipping Rope,199,static/img/skipping_rope.jpg,Fitness rope with ergonomic handles.
+54,Dumbbells 5kg,1199,static/img/dumbbells.jpg,Ideal for home weight training.
+55,Cycling Gloves,349,static/img/cycling_gloves.jpg,Anti-slip gloves for bikers.
+56,Gym Bag,999,static/img/gym_bag.jpg,Spacious duffle with shoe compartment.
+57,Water Bottle,299,static/img/water_bottle.jpg,Stainless steel insulated bottle.
+58,Knee Support,249,static/img/knee_support.jpg,Elastic support for workouts or pain relief.
+59,Workout Shorts,499,static/img/workout_shorts.jpg,Breathable shorts with pocket.
+60,Fitness Tracker Band,1499,static/img/fitness_tracker.jpg,Monitor steps, sleep and calories.
+
+61,Wireless Charger,799,static/img/wireless_charger.jpg,Fast charging pad for smartphones.
+62,Laptop Stand,599,static/img/laptop_stand.jpg,Ergonomic stand for better posture.
+63,Type-C Hub,999,static/img/type_c_hub.jpg,Multi-port USB hub for laptops.
+64,LED Strip Light,399,static/img/led_strip_light.jpg,Color-changing light for decor.
+65,Action Camera,4999,static/img/action_camera.jpg,Waterproof sports camera with 4K video.
+66,Tripod Stand,699,static/img/tripod_stand.jpg,Adjustable tripod for phone and camera.
+67,PC Speakers,899,static/img/pc_speakers.jpg,2.1 channel speakers with subwoofer.
+68,Smart Plug,1099,static/img/smart_plug.jpg,App-controlled plug with scheduling.
+69,Laser Pointer,299,static/img/laser_pointer.jpg,Red laser for presentation or pets.
+70,Touch Lamp,799,static/img/touch_lamp.jpg,Adjustable brightness lamp with touch control.
+
+71,Canvas Tote Bag,599,static/img/canvas_tote_bag.jpg,Stylish and reusable canvas bag.
+72,Coffee Mug,199,static/img/coffee_mug.jpg,Ceramic mug with quote print.
+73,Wall Mirror,1299,static/img/wall_mirror.jpg,Round wall mirror for entryways.
+74,Drawer Organizer,399,static/img/drawer_organizer.jpg,Keep your drawers neat and sorted.
+75,Kitchen Knife Set,899,static/img/kitchen_knife.jpg,High-quality stainless steel set.
+76,Cutlery Holder,349,static/img/cutlery_holder.jpg,Wooden cutlery storage.
+77,Dining Table Mat,299,static/img/dining_table_mat.jpg,Set of 6 water-resistant mats.
+78,Bath Towel Set,699,static/img/bath_towel.jpg,Soft and absorbent bath towels.
+79,Bamboo Tray,399,static/img/bamboo_tray.jpg,Multi-purpose tray made of bamboo.
+80,Aroma Diffuser,999,static/img/aroma_diffuser.jpg,Ultrasonic humidifier with essential oil feature.
+
+81,Bluetooth Neckband,1099,static/img/bluetooth_neckband.jpg,Wireless music with long battery.
+82,Screen Cleaner Kit,199,static/img/screen_cleaner_kit.jpg,Cleans screens without scratches.
+83,Noise Cancelling Headphones,2999,static/img/noise_headphones.jpg,Over-ear design with ANC.
+84,VR Headset,3499,static/img/vr_headset.jpg,Immersive virtual reality gaming.
+85,Digital Drawing Pad,4999,static/img/drawing_pad.jpg,Graphic tablet for artists.
+86,External HDD 1TB,3599,static/img/external_hdd.jpg,Portable external hard disk.
+87,Mini Projector,5999,static/img/mini_projector.jpg,HD portable projector for home theater.
+88,Electric Kettle,899,static/img/electric_kettle.jpg,Fast boiling with auto shut-off.
+89,Robot Vacuum,7999,static/img/robot_vacuum.jpg,Smart cleaning with scheduling.
+90,Air Purifier,6999,static/img/air_purifier.jpg,HEPA filter for clean air.
+
+91,Wireless Mouse,399,static/img/wireless_mouse.jpg,Plug and play mouse with smooth tracking.
+92,Notebook Journal,199,static/img/notebook_journal.jpg,Aesthetic journal for daily writing.
+93,Pen Set,149,static/img/pen_set.jpg,Premium pen gift set.
+94,Desk Calendar,249,static/img/desk_calendar.jpg,2025 minimalist desktop calendar.
+95,Sticky Notes,99,static/img/sticky_notes.jpg,Colorful sticky note pads.
+96,Study Lamp,699,static/img/study_lamp.jpg,LED study light with brightness control.
+97,Laptop Sleeve,499,static/img/laptop_sleeve.jpg,Slim and padded laptop protection.
+98,Cable Organizer,149,static/img/cable_organizer.jpg,Keep your wires tangle-free.
+99,Reading Glasses,799,static/img/reading_glasses.jpg,Anti-glare and stylish specs.
+100,Book Stand,399,static/img/book_stand.jpg,Adjustable stand for books or tablets.
