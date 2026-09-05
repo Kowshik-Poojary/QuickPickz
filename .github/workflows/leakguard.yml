@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run LeakGuard
-        uses: Kowshik-Poojary/VH-BitwinInit@v0.1.0       # <-- points at your published action
+        uses: Kowshik-Poojary/VH-BitwinInit@main       # <-- points at your published action
         env:
           LEAKGUARD_USER_ID: ${{ github.actor }}
         with:
