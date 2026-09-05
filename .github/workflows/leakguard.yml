@@ -1,0 +1,26 @@
+name: LeakGuard
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write        # so the action can post inline PR comments
+      security-events: write      # so SARIF uploads to the Security tab
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run LeakGuard
+        uses: nikhil2x/leakguard@v1        # <-- points at your published action
+        env:
+          LEAKGUARD_USER_ID: ${{ github.actor }}
+        with:
+          path: "."                        # scan the whole repo
+          fail-on: "error"                 # block the PR only on errors
+          report-url: ${{ vars.LEAKGUARD_REPORT_URL }}
+          report-token: ${{ secrets.LEAKGUARD_TOKEN }}
